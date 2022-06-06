@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Crew = () => {
-  return <div>Crew</div>;
+  return <main className="crew">Crew</main>;
 };
 
 export default Crew;

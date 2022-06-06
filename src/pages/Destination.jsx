@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Destination = () => {
-  return <div>Destination</div>;
+  return <main className="destination">Destination</main>;
 };
 
 export default Destination;
