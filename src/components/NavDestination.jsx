@@ -7,11 +7,11 @@ const NavDestination = () => {
   let { planet } = useParams;
 
   return (
-    <nav>
+    <nav className="nav-planet">
       {planet}
       <ul>
         {destinations.map((destination) => (
-          <li>
+          <li key={destination.name}>
             <NavLink to={'/destination/' + destination.name}>
               {destination.name}
             </NavLink>

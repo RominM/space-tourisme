@@ -2,9 +2,9 @@
   position: absolute;
   top: 45%;
   left: 10%;
-  width: 450px;
-  height: 382px;
-  color: #fff;
+  width: 500px;
+  height: auto;
+  color: $MainWhite;
   h1 {
     font-family: $FontSerif;
     font-size: 150px;
@@ -23,5 +23,6 @@
   p {
     font-size: 22px;
     line-height: 37px;
+    letter-spacing: 1px;
   }
 }

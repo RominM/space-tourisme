@@ -1,10 +1,12 @@
 import React from 'react';
+import data from './../services/data/data.json';
 
 const PlanetInfo = (props) => {
-  
+  const destinations = data.destinations;
+
   return (
     <div>
-      <h1>{props.name}</h1>
+      <h1>{destinations[0].name}</h1>
       <p>{props.description}</p>
       <div>
         <span>AVG. DISTANCE</span>
