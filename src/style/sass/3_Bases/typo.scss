@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Bellefair;
+  src: url('./../../../assets/fonts/Bellefair/Bellefair-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: Barlow_Condensed;
+  src: url('./../../../assets/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf')
+    format('truetype');
+}
+
+$FontSerif: Bellefair, 'Courier New';
+$FontSansSerif: Barlow_Condensed;

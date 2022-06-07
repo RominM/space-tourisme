@@ -5,22 +5,45 @@ header {
   margin: 50px 0 0 65px;
   height: 100px;
   line-height: 100px;
-  z-index: 555;
+  z-index: 5;
   img {
     display: block;
     margin: auto 0;
     cursor: pointer;
+    z-index: 999;
   }
   nav {
     display: block;
-    background-color: #fff;
+    background-color: $MainWhite;
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.034);
+    background-color: #97979712;
     backdrop-filter: blur(25px);
+    font-family: $FontSansSerif;
+    font-size: 20px;
+    letter-spacing: 5px;
     ul {
       display: flex;
       margin: auto 200px;
       justify-content: space-between;
+      li {
+        a {
+          padding: 30px 5px;
+          border-bottom: transparent 4px solid;
+          transition: 0.3s;
+          strong {
+            font-weight: bolder;
+          }
+        }
+      }
+      a:hover {
+        border-bottom: $MainGrey 4px solid;
+      }
+      .active {
+        border-bottom: $MainWhite 4px solid;
+      }
+      .active:hover {
+        border-bottom: $MainWhite 4px solid;
+      }
     }
   }
   nav:before {
@@ -30,6 +53,6 @@ header {
     left: -650px;
     width: 700px;
     height: 1px;
-    background-color: #fff;
+    background-color: $MainGrey;
   }
 }

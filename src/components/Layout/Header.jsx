@@ -1,36 +1,50 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from './../../assets/shared/logo.svg';
 
 const Header = () => {
   return (
     <header>
-      <img src={logo} alt="logo space" width="65" height="65" />
+      <Link to="/">
+        <img src={logo} alt="logo space" width="65" height="65" />
+      </Link>
       <nav>
         <ul>
           <li>
-            <Link to="/">
-              <span>00</span>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+            >
+              <strong>00</strong>&nbsp;
               <span>HOME</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/destination">
-              <span>01</span>
+            <NavLink
+              to="/destination"
+              className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+            >
+              <strong>01</strong>&nbsp;
               <span>DESTINATION</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/crew">
-              <span>02</span>
+            <NavLink
+              to="/crew"
+              className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+            >
+              <strong>02</strong>&nbsp;
               <span>CREW</span>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/technology">
-              <span>03</span>
+            <NavLink
+              to="/technology"
+              className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+            >
+              <strong>03</strong>&nbsp;
               <span>TECHNOLOGY</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

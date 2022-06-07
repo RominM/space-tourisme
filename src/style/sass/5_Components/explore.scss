@@ -1,12 +1,36 @@
-.explore {
-  position: absolute;
-  top: 55%;
-  left: 70%;
-  width: 274px;
-  height: 274px;
-  border-radius: 50%;
-  background-color: #fff;
-  line-height: 274px;
-  text-align: center;
-  cursor: pointer;
+.explore_effect {
+  position: relative;
+  top: 50%;
+  left: 65%;
+  width: 450px;
+  height: 450px;
+  &--hover {
+    position: absolute;
+    top: 19%;
+    left: 19%;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    background-color: $SecondGrey;
+    z-index: 0;
+    transition: 0.8s;
+  }
+  &--main {
+    position: absolute;
+    top: 19%;
+    left: 19%;
+    width: 274px;
+    height: 274px;
+    line-height: 274px;
+    text-align: center;
+    font-family: $FontSerif;
+    font-size: 35px;
+    border-radius: 50%;
+    background-color: $MainWhite;
+    cursor: pointer;
+    z-index: 555;
+    &:hover + .explore_effect--hover {
+      transform: scale(1.6);
+    }
+  }
 }
