@@ -1,8 +1,27 @@
 .intro {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 10%;
   width: 450px;
   height: 382px;
   color: #fff;
+  h1 {
+    font-family: $FontSerif;
+    font-size: 150px;
+    margin: 50px 0 50px 0;
+  }
+  h5,
+  p {
+    color: $MainPurple;
+    font-family: $FontSansSerif;
+  }
+  h5 {
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+  }
+  p {
+    font-size: 22px;
+    line-height: 37px;
+  }
 }

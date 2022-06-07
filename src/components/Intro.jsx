@@ -1,11 +1,14 @@
 import React from 'react';
 
 const Intro = () => {
+  const H1 = 'Space';
+  const H5 = 'So, you want to travel to';
+
   return (
     <div className="intro">
-      <h5>So, you want to travel to</h5>
+      <h5>{H5.toLocaleUpperCase()}</h5>
       <br />
-      <h1>Space</h1>
+      <h1>{H1.toLocaleUpperCase()}</h1>
       <br />
       <p>
         Let’s face it; if you want to go to space, you might as well genuinely

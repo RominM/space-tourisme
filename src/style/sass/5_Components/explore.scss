@@ -27,6 +27,7 @@
     font-size: 35px;
     border-radius: 50%;
     background-color: $MainWhite;
+    color: $MainBlack;
     cursor: pointer;
     z-index: 555;
     &:hover + .explore_effect--hover {
