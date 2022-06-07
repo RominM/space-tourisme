@@ -1,0 +1,35 @@
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0 65px;
+  height: 100px;
+  line-height: 100px;
+  z-index: 555;
+  img {
+    display: block;
+    margin: auto 0;
+    cursor: pointer;
+  }
+  nav {
+    display: block;
+    background-color: #fff;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.034);
+    backdrop-filter: blur(25px);
+    ul {
+      display: flex;
+      margin: auto 200px;
+      justify-content: space-between;
+    }
+  }
+  nav:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -650px;
+    width: 700px;
+    height: 1px;
+    background-color: #fff;
+  }
+}

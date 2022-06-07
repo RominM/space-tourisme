@@ -5,7 +5,7 @@ import logo from './../../assets/shared/logo.svg';
 const Header = () => {
   return (
     <header>
-      <img src={logo} alt="logo space" />
+      <img src={logo} alt="logo space" width="65" height="65" />
       <nav>
         <ul>
           <li>
@@ -15,19 +15,19 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/destination">
               <span>01</span>
               <span>DESTINATION</span>
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/crew">
               <span>02</span>
-              <span>CREAW</span>
+              <span>CREW</span>
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/technology">
               <span>03</span>
               <span>TECHNOLOGY</span>
             </Link>
