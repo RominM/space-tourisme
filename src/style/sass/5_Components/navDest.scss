@@ -1,5 +1,28 @@
 .nav-planet {
+  width: 60%;
+  font-family: $FontSansSerif;
+  font-size: 28px;
   ul {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    li {
+      a {
+        padding: 15px 0;
+        color: $MainPurple;
+        border-bottom: transparent 4px solid;
+        transition: 0.3s;
+      }
+      a:hover {
+        border-bottom: $MainGrey 4px solid;
+      }
+      .active {
+        color: $MainWhite;
+        border-bottom: $MainWhite 4px solid;
+      }
+      .active:hover {
+        border-bottom: $MainWhite 4px solid;
+      }
+    }
   }
 }
