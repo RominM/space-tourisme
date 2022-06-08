@@ -21,7 +21,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/destination"
+              to={'/destination/Moon'}
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
               <strong>01</strong>&nbsp;

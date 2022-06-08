@@ -9,7 +9,10 @@ const NavDestination = (props) => {
       <ul>
         {destinations.map((destination) => (
           <li key={destination.name}>
-            <NavLink to={'/destination/' + destination.name}>
+            <NavLink
+              to={'/destination/' + destination.name}
+              className={({ isActive }) => (isActive ? 'active' : 'inactive')}
+            >
               {destination.name}
             </NavLink>
           </li>
