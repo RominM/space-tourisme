@@ -1,11 +1,19 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { useParams } from 'react-router-dom';
+import DestiImage from '../components/DestiImage';
 import NavDestination from '../components/NavDestination';
 import PlanetInfo from '../components/PlanetInfo';
-// import spaceData from './../services/data/data.json';
+import SPACE_DATA from './../services/data/data.json';
 
-const Destination = (spaceData) => {
-  console.log(spaceData);
+const Destination = () => {
+  const destinations = SPACE_DATA.destinations;
+  const paramDestinaton = useParams().name;
+
+  const currentDestination = destinations.find(
+    (destination) => destination.name === paramDestinaton
+  );
+  console.log('param in URL >> ', paramDestinaton);
 
   return (
     <HelmetProvider>
@@ -14,16 +22,11 @@ const Destination = (spaceData) => {
       </Helmet>
       <main className="destination">
         <div className="destination_head">
-          <span className="destination_head--nmb">01</span>
-          <span className="destination_head--title">PICK YOUR DESTINATION</span>
-          {/* <img
-            src={destinations[0].images.png}
-            alt={destinations[0].name + ' pic'}
-          /> */}
+          <DestiImage destinations={currentDestination} />
         </div>
         <div className="destination-aside">
-          <NavDestination />
-          <PlanetInfo />
+          <NavDestination destinations={destinations} />
+          <PlanetInfo destinations={currentDestination} />
         </div>
       </main>
     </HelmetProvider>

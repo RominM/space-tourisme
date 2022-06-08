@@ -1,20 +1,19 @@
-import React from 'react';
-import data from './../services/data/data.json';
+import React, { useState } from 'react';
 
 const PlanetInfo = (props) => {
-  const destinations = data.destinations;
-
+  const destinations = props.destinations;
+  console.log(destinations);
   return (
     <div>
-      <h1>{destinations[0].name}</h1>
-      <p>{props.description}</p>
+      <h1>{destinations.name}</h1>
+      <p>{destinations.description}</p>
       <div>
         <span>AVG. DISTANCE</span>
-        <span>{props.distance}</span>
+        <span>{destinations.distance}</span>
       </div>
       <div>
         <span>Est. travel time</span>
-        <span>{props.travel}</span>
+        <span>{destinations.travel}</span>
       </div>
     </div>
   );

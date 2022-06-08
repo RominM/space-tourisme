@@ -1,14 +1,11 @@
 import React from 'react';
-import data from './../services/data/data.json';
-import { NavLink, useParams } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const NavDestination = () => {
-  const destinations = data.destinations;
-  let { planet } = useParams;
+const NavDestination = (props) => {
+  const destinations = props.destinations;
 
   return (
     <nav className="nav-planet">
-      {planet}
       <ul>
         {destinations.map((destination) => (
           <li key={destination.name}>
