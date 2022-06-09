@@ -1,18 +1,18 @@
 import React from 'react';
-import moon from './../../assets/destination/image-moon.png';
+import TitlePage from '../TitlePage';
 
 const PicturePlanet = (props) => {
   const destinations = props.destinations;
-  const image = destinations.images;
+  const image = destinations.images.png;
+
+  const number = '01';
+  const title = 'PICK YOUR DESTINATION';
 
   return (
     <>
-      <div className="destination-title">
-        <span className="destination_head--nmb">01</span>
-        <span className="destination_head--title">PICK YOUR DESTINATION</span>
-      </div>
+      <TitlePage number={number} title={title} />
       <img
-        src={moon}
+        src={image}
         alt={destinations.name + ' pic'}
         width={445}
         height={445}

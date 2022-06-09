@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 import Technology from '../pages/Technology';
 
 const Routing = () => {
+  //TODO try to put the useParams() here
   return (
     <Router>
       <Header />
