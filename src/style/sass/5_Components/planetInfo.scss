@@ -6,10 +6,10 @@
     font-weight: lighter;
   }
   p {
+    @include main-light-font;
     position: relative;
     padding-bottom: 60px;
     color: $MainPurple;
-    font-family: $FontSansSerif;
     font-size: 28px;
     font-weight: lighter;
     line-height: 37px;
@@ -34,8 +34,8 @@
       display: block;
     }
     .font-a {
+      @include main-light-font;
       margin-bottom: 15px;
-      font-family: $FontSansSerif;
       font-size: 20px;
       letter-spacing: 1px;
       color: $MainPurple;

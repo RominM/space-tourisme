@@ -1,0 +1,18 @@
+.title-page {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 100px 230px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  &--nmb {
+    @include main-bolder-font;
+    color: $SecondGrey;
+    margin-right: 40px;
+  }
+  &--title {
+    @include main-light-font;
+    color: $MainWhite;
+    width: 100%;
+  }
+}

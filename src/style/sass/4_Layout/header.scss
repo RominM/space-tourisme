@@ -18,7 +18,6 @@ header {
     width: 60%;
     background-color: #97979712;
     backdrop-filter: blur(25px);
-    font-family: $FontSansSerif;
     font-size: 20px;
     letter-spacing: 5px;
     ul {
@@ -30,8 +29,11 @@ header {
           padding: 32px 5px;
           border-bottom: transparent 4px solid;
           transition: 0.3s;
-          strong {
-            font-weight: bolder;
+          .header-title {
+            @include main-light-font;
+          }
+          .header-nmb {
+            @include main-bolder-font;
           }
         }
       }

@@ -15,8 +15,8 @@ const Header = () => {
               to="/"
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
-              <strong>00</strong>&nbsp;
-              <span>HOME</span>
+              <span className="header-nmb">00</span>&nbsp;
+              <span className="header-title">HOME</span>
             </NavLink>
           </li>
           <li>
@@ -24,26 +24,26 @@ const Header = () => {
               to={'/destination/Moon'}
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
-              <strong>01</strong>&nbsp;
-              <span>DESTINATION</span>
+              <span className="header-nmb">01</span>&nbsp;
+              <span className="header-title">DESTINATION</span>
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/crew"
+              to="/crew/Douglas Hurley"
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
-              <strong>02</strong>&nbsp;
-              <span>CREW</span>
+              <span className="header-nmb">02</span>&nbsp;
+              <span className="header-title">CREW</span>
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/technology"
+              to="/technology/Launch vehicle"
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
-              <strong>03</strong>&nbsp;
-              <span>TECHNOLOGY</span>
+              <span className="header-nmb">03</span>&nbsp;
+              <span className="header-title">TECHNOLOGY</span>
             </NavLink>
           </li>
         </ul>

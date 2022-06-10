@@ -13,8 +13,8 @@
   }
   h5,
   p {
+    @include main-light-font;
     color: $MainPurple;
-    font-family: $FontSansSerif;
   }
   h5 {
     font-size: 28px;
