@@ -2,31 +2,35 @@ header {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 50px 0 0 65px;
-  height: 100px;
-  line-height: 100px;
+  margin: 35px 0 0 65px;
+  height: 96px;
+  line-height: 96px;
   z-index: 5;
-  img {
-    display: block;
-    margin: auto 0;
-    cursor: pointer;
-    z-index: 999;
+  a {
+    padding-top: 25px;
+    img {
+      display: block;
+      cursor: pointer;
+      z-index: 999;
+      margin-right: 250px;
+    }
   }
   nav {
-    display: block;
+    display: inline-block;
     background-color: $MainWhite;
     width: 60%;
     background-color: #97979712;
     backdrop-filter: blur(25px);
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 5px;
     ul {
       display: flex;
-      margin: auto 200px;
+      width: 70%;
+      margin: auto;
       justify-content: space-between;
       li {
         a {
-          padding: 32px 5px;
+          padding: 35px 5px;
           border-bottom: transparent 4px solid;
           transition: 0.3s;
           .header-title {
@@ -52,9 +56,10 @@ header {
     content: '';
     position: absolute;
     top: 50%;
-    left: -650px;
-    width: 700px;
-    height: 1px;
-    background-color: $MainGrey;
+    left: -440px;
+    min-width: 460px;
+    height: 2px;
+    z-index: 5;
+    background-color: $ThirdGrey;
   }
 }

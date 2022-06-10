@@ -1,12 +1,13 @@
 .nav-planet {
-  width: 60%;
-  font-family: $FontSansSerif_Light;
-  font-size: 28px;
+  @include main-light-font;
+  width: 100%;
   ul {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 67%;
     li {
+      font-size: 20px;
+      letter-spacing: 2.7px;
       a {
         padding: 15px 0;
         color: $MainPurple;

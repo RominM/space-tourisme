@@ -1,7 +1,11 @@
 @mixin main-light-font {
-  font-family: $FontSansSerif_Light;
+  font-family: $FontSansSerif_Lgt;
 }
 
 @mixin main-bolder-font {
-  font-family: $FontSansSerif_Bold;
+  font-family: $FontSansSerif_Bld;
+}
+
+@mixin main-Regular-font {
+  font-family: $FontSansSerif_Rgl;
 }

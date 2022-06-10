@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <Link to="/">
-        <img src={logo} alt="logo space" width="65" height="65" />
+        <img src={logo} alt="logo space" width="48" height="48" />
       </Link>
       <nav>
         <ul>

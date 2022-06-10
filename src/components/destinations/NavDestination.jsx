@@ -13,7 +13,7 @@ const NavDestination = (props) => {
               to={'/destination/' + destination.name}
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
-              {destination.name}
+              {destination.name.toUpperCase()}
             </NavLink>
           </li>
         ))}

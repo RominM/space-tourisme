@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: Barlow_Condensed_lgt;
+  font-family: Barlow_Condensed_Lighter;
   src: url('./../../../assets/fonts/Barlow_Condensed/BarlowCondensed-Light.ttf')
     format('truetype');
 }
@@ -16,6 +16,13 @@
     format('truetype');
 }
 
+@font-face {
+  font-family: Barlow_Condensed_Regular;
+  src: url('./../../../assets/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf')
+    format('truetype');
+}
+
 $FontSerif: Bellefair;
-$FontSansSerif_Light: Barlow_Condensed_lgt;
-$FontSansSerif_Bold: Barlow_Condensed_bld;
+$FontSansSerif_Lgt: Barlow_Condensed_Lighter, 'sans serif';
+$FontSansSerif_Rgl: Barlow_Condensed_Regular, 'sans serif';
+$FontSansSerif_Bld: Barlow_Condensed_bld, 'sans serif';
