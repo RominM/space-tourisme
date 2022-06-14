@@ -3,7 +3,6 @@ import Descript from '../Discript';
 
 const PlanetInfo = (props) => {
   const destinations = props.destinations;
-  const H1 = destinations.name.toUpperCase();
   return (
     <div className="planet-info">
       <Descript destinations={destinations} />
