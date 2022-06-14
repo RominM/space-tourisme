@@ -1,11 +1,11 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
-import CrewInfo from '../components/crew/CrewInfo';
-import NavCrew from '../components/crew/NavCrew';
-import Picture from '../components/Picture';
-import TitlePage from '../components/TitlePage';
 import SPACE_DATA from './../services/data/data.json';
+import CrewInfo from '../components/crewInfo/CrewInfo';
+import CrewNav from '../components/crewNav/CrewNav';
+import Picture from '../components/picture/Picture';
+import TitlePage from '../components/titlePage/TitlePage';
 
 const Crew = () => {
   const crew = SPACE_DATA.crew;
@@ -29,7 +29,7 @@ const Crew = () => {
             <Picture currentData={currentCrew} />
           </div>
         </div>
-        <NavCrew crew={crew} />
+        <CrewNav crew={crew} />
       </main>
     </HelmetProvider>
   );

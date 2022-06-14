@@ -1,17 +1,17 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
-import Picture from '../components/Picture';
-import NavDestination from '../components/destinations/NavDestination';
-import PlanetInfo from '../components/destinations/PlanetInfo';
 import SPACE_DATA from './../services/data/data.json';
-import TitlePage from '../components/TitlePage';
+import DestNav from '../components/destNav/DestNav';
+import DestInfo from '../components/destInfo/DestInfo';
+import TitlePage from '../components/titlePage/TitlePage';
+import Picture from '../components/picture/Picture';
 
 const Destination = () => {
   const destinations = SPACE_DATA.destinations;
   const paramDestinaton = useParams().name;
 
-  const currentDestination = destinations.find(
+  const currentDest = destinations.find(
     (destination) => destination.name === paramDestinaton
   );
 
@@ -26,10 +26,10 @@ const Destination = () => {
       <main className="destination main-page">
         <TitlePage number={number} title={title.toLocaleUpperCase()} />
         <div className="slider">
-          <Picture currentData={currentDestination} />
+          <Picture currentData={currentDest} />
           <div className="destination_aside">
-            <NavDestination destinations={destinations} />
-            <PlanetInfo destinations={currentDestination} />
+            <DestNav destinations={destinations} />
+            <DestInfo currentDest={currentDest} />
           </div>
         </div>
       </main>
