@@ -10,4 +10,13 @@
   bottom: 0;
   right: 0;
   left: 0;
+  .crew-aside {
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 10%;
+      width: auto;
+      height: auto;
+    }
+  }
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import Descript from '../picture/Discript';
 
 const DestInfo = (props) => {
-  const destinations = props.destinations;
+  const destinations = props.currentDest;
+  console.log(props);
   return (
     <div className="planet-info">
       <Descript destinations={destinations} />
