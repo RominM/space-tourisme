@@ -6,13 +6,7 @@
     font-weight: lighter;
   }
   p {
-    @include main-light-font;
-    position: relative;
-    padding-bottom: 60px;
-    color: $MainPurple;
-    font-size: 19px;
-    line-height: 37px;
-    letter-spacing: 1.5px;
+    @include para;
   }
   p:after {
     content: '';
@@ -27,7 +21,7 @@
   .info-travel {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 80%;
     padding-top: 30px;
     span {
       display: block;

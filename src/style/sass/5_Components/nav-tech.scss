@@ -1,0 +1,35 @@
+.nav-tech {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  margin-left: 200px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 330px;
+    li {
+      a {
+        display: block;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 32px;
+        color: $MainWhite;
+        background-color: transparent;
+        border: solid 1px;
+        border-radius: 50%;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: #000;
+        background-color: $SecondWhite;
+      }
+      .active {
+        color: #000;
+        background-color: $MainWhite;
+      }
+    }
+  }
+}

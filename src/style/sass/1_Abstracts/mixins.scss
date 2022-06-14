@@ -9,3 +9,22 @@
 @mixin main-Regular-font {
   font-family: $FontSansSerif_Rgl;
 }
+
+@mixin para {
+  @include main-light-font;
+  position: relative;
+  width: 450px;
+  padding-bottom: 50px;
+  color: $MainPurple;
+  font-size: 19px;
+  line-height: 35px;
+  letter-spacing: 1.5px;
+}
+
+@mixin h1-pages {
+  font-family: $FontSerif;
+  font-weight: lighter;
+  font-size: 56px;
+  color: $MainWhite;
+  margin: 25px 0;
+}

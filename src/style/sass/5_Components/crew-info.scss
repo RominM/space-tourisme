@@ -1,0 +1,15 @@
+.crew-info {
+  margin-top: 105px;
+  h2 {
+    font-family: $FontSerif;
+    font-weight: lighter;
+    font-size: 32px;
+    color: $MainGrey;
+  }
+  h1 {
+    @include h1-pages;
+  }
+  p {
+    @include para;
+  }
+}

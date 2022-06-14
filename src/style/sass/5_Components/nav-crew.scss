@@ -1,0 +1,27 @@
+.nav-crew {
+  position: absolute;
+  bottom: 10%;
+  // width: 100%;
+  margin-left: 200px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 132px;
+    li {
+      a {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: $MainGrey;
+        border-radius: 50%;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: $MainWhite;
+      }
+      .active {
+        color: $MainWhite;
+      }
+    }
+  }
+}
