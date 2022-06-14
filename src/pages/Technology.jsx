@@ -1,7 +1,9 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
-import Picture from '../components/destinations/Picture';
+import Picture from '../components/Picture';
+import NavTech from '../components/technology/NavTech';
+import TechInfo from '../components/technology/TechInfo';
 import TitlePage from '../components/TitlePage';
 import SPACE_DATA from './../services/data/data.json';
 
@@ -20,12 +22,14 @@ const Technology = () => {
         <title>Technology</title>
       </Helmet>
       <main className="technology main-page">
-        <div className="technology-head">
-          <TitlePage number={number} title={title.toLocaleUpperCase()} />
+        <TitlePage number={number} title={title.toLocaleUpperCase()} />
+        <div className="slider">
+          <TechInfo currentData={currentTech} />
+          <div className="tech-aside">
+            <Picture currentData={currentTech} />
+          </div>
         </div>
-        <div className="technology-aside">
-          <Picture currentData={currentTech} />
-        </div>
+        <NavTech tech={tech} />
       </main>
     </HelmetProvider>
   );

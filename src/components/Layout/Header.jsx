@@ -30,7 +30,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/crew/Douglas Hurley"
+              to={'/crew/Douglas Hurley'}
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
               <span className="header-nmb">02</span>&nbsp;
@@ -39,7 +39,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/technology/Launch vehicle"
+              to={'/technology/Launch vehicle'}
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
               <span className="header-nmb">03</span>&nbsp;
