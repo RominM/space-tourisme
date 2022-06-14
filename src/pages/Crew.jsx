@@ -1,7 +1,9 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
-import Picture from '../components/destinations/Picture';
+import CrewInfo from '../components/crew/CrewInfo';
+import NavCrew from '../components/crew/NavCrew';
+import Picture from '../components/Picture';
 import TitlePage from '../components/TitlePage';
 import SPACE_DATA from './../services/data/data.json';
 
@@ -20,12 +22,14 @@ const Crew = () => {
         <title>Crew</title>
       </Helmet>
       <main className="crew main-page">
-        <div className="crew-head">
-          <TitlePage number={number} title={title.toLocaleUpperCase()} />
+        <TitlePage number={number} title={title.toLocaleUpperCase()} />
+        <div className="slider">
+          <CrewInfo currentData={currentCrew} />
+          <div className="crew-aside">
+            <Picture currentData={currentCrew} />
+          </div>
         </div>
-        <div className="crew-aside">
-          <Picture currentData={currentCrew} />
-        </div>
+        <NavCrew crew={crew} />
       </main>
     </HelmetProvider>
   );
