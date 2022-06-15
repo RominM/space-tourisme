@@ -1,13 +1,15 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
-import SPACE_DATA from './../services/data/data.json';
-import CrewInfo from '../components/crewInfo/CrewInfo';
-import CrewNav from '../components/crewNav/CrewNav';
-import Picture from '../components/picture/Picture';
-import TitlePage from '../components/titlePage/TitlePage';
-import './slider.scss';
+import SPACE_DATA from './../../services/data/data.json';
+import CrewInfo from '../../components/crewInfo/CrewInfo';
+import CrewNav from '../../components/crewNav/CrewNav';
+import Picture from '../../components/picture/Picture';
+import TitlePage from '../../components/titlePage/TitlePage';
+import './../slider.scss';
+import './crew.scss';
 import './crew-aside.scss';
+import './../main.scss';
 
 const Crew = () => {
   const crew = SPACE_DATA.crew;

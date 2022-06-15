@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from './../../assets/shared/logo.svg';
+import './header.scss';
 
 const Header = () => {
   return (
-    <header>
+    <header className="header">
       <Link to="/">
         <img src={logo} alt="logo space" width="48" height="48" />
       </Link>

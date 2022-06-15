@@ -1,6 +1,10 @@
-header {
-  position: relative;
+@import './../../style/sass/1_Abstracts/mixins.scss';
+@import './../../style/sass/3_Bases/typo.scss';
+@import './../../style/sass/3_Bases/colors.scss';
+
+.header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   margin: 35px 0 0 65px;
   height: 96px;

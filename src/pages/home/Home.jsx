@@ -1,7 +1,8 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import Explore from '../components/explore/Explore';
-import Intro from '../components/intro/Intro';
+import Explore from '../../components/explore/Explore';
+import Intro from '../../components/intro/Intro';
+import './home.scss';
 
 const Home = () => {
   return (

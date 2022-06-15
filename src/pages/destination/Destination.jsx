@@ -1,11 +1,13 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
-import SPACE_DATA from './../services/data/data.json';
-import DestNav from '../components/destNav/DestNav';
-import DestInfo from '../components/destInfo/DestInfo';
-import TitlePage from '../components/titlePage/TitlePage';
-import Picture from '../components/picture/Picture';
+import SPACE_DATA from './../../services/data/data.json';
+import DestNav from '../../components/destNav/DestNav';
+import DestInfo from '../../components/destInfo/DestInfo';
+import TitlePage from '../../components/titlePage/TitlePage';
+import Picture from '../../components/picture/Picture';
+import './destination.scss';
+import './../main.scss';
 
 const Destination = () => {
   const destinations = SPACE_DATA.destinations;
