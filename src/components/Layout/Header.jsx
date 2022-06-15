@@ -1,15 +1,26 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from './../../assets/shared/logo.svg';
+import Hamburger from '../hamburger/Hamburger';
 import './header.scss';
 
-const Header = () => {
+const Header = (props) => {
+  const showTopNavMenu = props.showTopNavMenu;
+
+  const showNav = {
+    display: showTopNavMenu ? 'block' : 'none',
+  };
+  const showMenuIcon = {
+    display: showTopNavMenu ? 'none' : 'block',
+  };
+
   return (
     <header className="header">
       <Link to="/">
         <img src={logo} alt="logo space" width="48" height="48" />
       </Link>
-      <nav>
+      <Hamburger style={showMenuIcon} />
+      <nav id="nav_container" style={showNav}>
         <ul>
           <li>
             <NavLink

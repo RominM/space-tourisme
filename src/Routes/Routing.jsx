@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 /* Pages & Components */
 import Header from '../components/Layout/Header';
@@ -9,9 +9,28 @@ import Technology from '../pages/technology/Technology';
 
 const Routing = () => {
   //TODO try to put the useParams() here
+
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    updateDimensions();
+
+    window.addEventListener('resize', updateDimensions);
+    return () => window.removeEventListener('resize', updateDimensions);
+  }, []);
+
+  const updateDimensions = () => {
+    const width = window.innerWidth;
+    setWindowWidth(width);
+  };
+
+  const responsive = {
+    showTopNavMenu: windowWidth > 1023,
+  };
+
   return (
     <Router>
-      <Header />
+      <Header showTopNavMenu={responsive.showTopNavMenu} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destination/:name" element={<Destination />} />
