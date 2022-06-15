@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './navDest.scss';
 
 const DestNav = (props) => {
   const destinations = props.destinations;

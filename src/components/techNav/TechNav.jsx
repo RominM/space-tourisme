@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './nav-tech.scss';
 
 const TechNav = (props) => {
   const techs = props.tech;

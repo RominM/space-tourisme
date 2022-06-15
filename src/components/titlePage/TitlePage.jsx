@@ -1,4 +1,5 @@
 import React from 'react';
+import './title-page.scss';
 
 const TitlePage = (props) => {
   return (

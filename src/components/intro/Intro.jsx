@@ -1,4 +1,5 @@
 import React from 'react';
+import './intro.scss';
 
 const Intro = () => {
   const H1 = 'Space';

@@ -6,6 +6,8 @@ import CrewInfo from '../components/crewInfo/CrewInfo';
 import CrewNav from '../components/crewNav/CrewNav';
 import Picture from '../components/picture/Picture';
 import TitlePage from '../components/titlePage/TitlePage';
+import './slider.scss';
+import './crew-aside.scss';
 
 const Crew = () => {
   const crew = SPACE_DATA.crew;
@@ -19,7 +21,7 @@ const Crew = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Crew</title>
+        <title>Space Tourisme - Crew</title>
       </Helmet>
       <main className="crew main-page">
         <TitlePage number={number} title={title.toLocaleUpperCase()} />

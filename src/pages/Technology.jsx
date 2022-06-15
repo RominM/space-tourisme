@@ -6,6 +6,7 @@ import TechInfo from '../components/techInfo/TechInfo';
 import TechNav from '../components/techNav/TechNav';
 import TitlePage from '../components/titlePage/TitlePage';
 import Picture from '../components/picture/Picture';
+import './tech-aside.scss';
 
 const Technology = () => {
   const tech = SPACE_DATA.technology;
@@ -19,7 +20,7 @@ const Technology = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Technology</title>
+        <title>Space Tourisme - Technology</title>
       </Helmet>
       <main className="technology main-page">
         <TitlePage number={number} title={title.toLocaleUpperCase()} />

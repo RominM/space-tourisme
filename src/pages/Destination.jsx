@@ -21,7 +21,7 @@ const Destination = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Destination</title>
+        <title>Space Tourisme - Destination</title>
       </Helmet>
       <main className="destination main-page">
         <TitlePage number={number} title={title.toLocaleUpperCase()} />

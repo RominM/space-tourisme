@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './nav-crew.scss';
 
 const CrewNav = (props) => {
   const crewMembers = props.crew;

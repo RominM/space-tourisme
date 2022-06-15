@@ -1,6 +1,6 @@
 import React from 'react';
-import Descript from '../picture/Discript';
-
+import Descript from '../descript/Discript';
+import './planetInfo.scss';
 const DestInfo = (props) => {
   const destinations = props.currentDest;
   console.log(props);

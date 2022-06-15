@@ -1,4 +1,5 @@
 import React from 'react';
+import './crew-info.scss';
 
 const CrewInfo = (props) => {
   const currentData = props.currentData;

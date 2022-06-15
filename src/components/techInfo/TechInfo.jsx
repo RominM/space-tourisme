@@ -1,4 +1,5 @@
 import React from 'react';
+import './tech-info.scss';
 
 const TechInfo = (props) => {
   const currentData = props.currentData;
