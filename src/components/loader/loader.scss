@@ -1,0 +1,60 @@
+.loading-page {
+  position: absolute;
+  display: block;
+  background-color: rgb(5, 0, 19);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .loader {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
+    z-index: 5;
+    div {
+      position: absolute;
+      border: 5px solid #3cb9ff;
+      opacity: 1;
+      border-radius: 50%;
+      animation: wave 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    div:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+  }
+}
+
+@keyframes wave {
+  0% {
+    top: 90px;
+    left: 90px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 90px;
+    left: 90px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 90px;
+    left: 90px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 180px;
+    height: 180px;
+    opacity: 0;
+  }
+}
