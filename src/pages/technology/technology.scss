@@ -10,4 +10,13 @@
   bottom: 0;
   right: 0;
   left: 0;
+  .tech-aside {
+    img {
+      position: absolute;
+      top: 30%;
+      right: 0;
+      width: auto;
+      height: auto;
+    }
+  }
 }

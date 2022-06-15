@@ -1,11 +1,11 @@
 import React from 'react';
 import Descript from '../descript/Discript';
-import './planetInfo.scss';
+import './dest-info.scss';
 const DestInfo = (props) => {
   const destinations = props.currentDest;
   console.log(props);
   return (
-    <div className="planet-info">
+    <div className="dest-info">
       <Descript destinations={destinations} />
       <div className="info-travel">
         <div>

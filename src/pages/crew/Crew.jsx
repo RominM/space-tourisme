@@ -8,7 +8,6 @@ import Picture from '../../components/picture/Picture';
 import TitlePage from '../../components/titlePage/TitlePage';
 import './../slider.scss';
 import './crew.scss';
-import './crew-aside.scss';
 import './../main.scss';
 
 const Crew = () => {

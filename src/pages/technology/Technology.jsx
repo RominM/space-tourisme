@@ -6,7 +6,6 @@ import TechInfo from '../../components/techInfo/TechInfo';
 import TechNav from '../../components/techNav/TechNav';
 import TitlePage from '../../components/titlePage/TitlePage';
 import Picture from '../../components/picture/Picture';
-import './tech-aside.scss';
 import './technology.scss';
 import './../main.scss';
 
