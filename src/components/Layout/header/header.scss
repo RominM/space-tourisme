@@ -1,4 +1,4 @@
-@import './../../style/sass/abstracts/mixins.scss';
+@import './../../../style/sass/abstracts/mixins.scss';
 .header {
   display: flex;
   position: relative;
@@ -13,10 +13,9 @@
       display: block;
       cursor: pointer;
       z-index: 999;
-      margin-right: 250px;
     }
   }
-  nav {
+  #nav_container {
     display: inline-block;
     background-color: $MainWhite;
     width: 60%;
@@ -53,7 +52,7 @@
       }
     }
   }
-  nav:before {
+  #nav_container:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -62,5 +61,11 @@
     height: 2px;
     z-index: 5;
     background-color: $ThirdGrey;
+  }
+}
+
+@media screen and(max-width: 780px) {
+  .header {
+    margin: 10px 0 0 25px;
   }
 }

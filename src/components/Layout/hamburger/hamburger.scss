@@ -1,0 +1,40 @@
+.hamburger-menu {
+  margin: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  .bar-top,
+  .bar-middle,
+  .bar-bottom {
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    margin: 7px 0;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
+  .toggle-top,
+  .toggle-middle,
+  .toggle-bottom {
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    margin: 7px 0;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
+  .toggle-top {
+    transform: rotate(45deg);
+  }
+  .toggle-middle {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+  .toggle-bottom {
+    transform: rotate(-45deg);
+  }
+}
+

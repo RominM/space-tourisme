@@ -37,3 +37,22 @@
     }
   }
 }
+
+@media screen and(max-width: 768px) {
+  .explore_effect {
+    top: 70%;
+    left: 25%;
+    width: 150px;
+    height: 150px;
+    &--hover {
+      width: 150px;
+      height: 150px;
+    }
+    &--main {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      font-size: 20px;
+    }
+  }
+}

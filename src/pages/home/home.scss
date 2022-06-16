@@ -11,3 +11,18 @@
   right: 0;
   left: 0;
 }
+
+@media screen and(max-width: 768px) {
+  .home {
+    background: url('./../../assets/home/background-home-mobile.jpg') no-repeat
+      center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}

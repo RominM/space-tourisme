@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from './../../assets/shared/logo.svg';
+import logo from './../../../assets/shared/logo.svg';
 import Hamburger from '../hamburger/Hamburger';
 import './header.scss';
 
