@@ -8,8 +8,6 @@ import Home from '../pages/home/Home';
 import Technology from '../pages/technology/Technology';
 
 const Routing = () => {
-  //TODO try to put the useParams() here
-
   const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
