@@ -5,7 +5,10 @@
   padding-left: 200px;
   margin: auto;
 }
-
+.slider-bis {
+  // display: flex;
+  flex-direction: column-reverse;
+}
 @media screen and (max-width: 1000px) {
   .slider {
     padding-left: 0;

@@ -15,3 +15,20 @@
     @include para;
   }
 }
+
+@media screen and(max-width: 400px) {
+  .crew-info {
+    text-align: center;
+    margin-top: 90px;
+    h2 {
+      font-size: 1.2em;
+    }
+    h1 {
+      font-size: 2.1em;
+    }
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+  }
+}

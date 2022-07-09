@@ -31,7 +31,7 @@
     background-color: $MainWhite;
     color: $MainBlack;
     cursor: pointer;
-    z-index: 555;
+    z-index: 3;
     &:hover + .explore_effect--hover {
       transform: scale(1.6);
     }

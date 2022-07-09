@@ -25,7 +25,7 @@ const Technology = () => {
       </Helmet>
       <main className="technology main-page">
         <TitlePage number={number} title={title.toLocaleUpperCase()} />
-        <div className="slider">
+        <div className="slider slider-bis">
           <TechInfo currentData={currentTech} />
           <div className="tech-aside">
             <Picture currentData={currentTech} />

@@ -1,3 +1,5 @@
+@import './../../style/sass/bases/colors.scss';
+
 .crew {
   position: absolute;
   background: url('./../../assets/crew/background-crew-desktop.jpg') no-repeat
@@ -11,12 +13,29 @@
   right: 0;
   left: 0;
   .crew-aside {
+    display: block;
     img {
       position: absolute;
       bottom: 0;
       right: 10%;
       width: auto;
       height: auto;
+    }
+  }
+}
+
+@media screen and(max-width: 400px) {
+  .crew {
+    .crew-aside {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      border-bottom: solid 1px $SecondGrey;
+      img {
+        position: inherit;
+        width: auto;
+        height: 300px;
+      }
     }
   }
 }

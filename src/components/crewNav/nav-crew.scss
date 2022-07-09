@@ -26,3 +26,16 @@
     }
   }
 }
+
+@media screen and(max-width: 400px) {
+  .nav-crew {
+    position: absolute;
+    top: 69%;
+    width: 100%;
+    margin-left: 0;
+    ul {
+      width: 30%;
+      margin: auto;
+    }
+  }
+}

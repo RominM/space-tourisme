@@ -9,6 +9,12 @@ const Hamburger = (props) => {
     setToggle(!toggle);
   };
 
+  const closeMenu = () => {
+    const menu = document.querySelector('#nav_resp');
+    menu.style.display = 'none';
+    setToggle(!toggle);
+  };
+
   return (
     <div>
       <div className="hamburger-menu" style={showMenuIcon} onClick={handleMenu}>
@@ -19,7 +25,7 @@ const Hamburger = (props) => {
       {toggle && (
         <nav id="nav_resp">
           <ul>
-            <li>
+            <li onClick={() => closeMenu()}>
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}
@@ -28,7 +34,7 @@ const Hamburger = (props) => {
                 <span className="header-title">HOME</span>
               </NavLink>
             </li>
-            <li>
+            <li onClick={() => closeMenu()}>
               <NavLink
                 to={'/destination/Moon'}
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}
@@ -37,7 +43,7 @@ const Hamburger = (props) => {
                 <span className="header-title">DESTINATION</span>
               </NavLink>
             </li>
-            <li>
+            <li onClick={() => closeMenu()}>
               <NavLink
                 to={'/crew/Douglas Hurley'}
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}
@@ -46,7 +52,7 @@ const Hamburger = (props) => {
                 <span className="header-title">CREW</span>
               </NavLink>
             </li>
-            <li>
+            <li onClick={() => closeMenu()}>
               <NavLink
                 to={'/technology/Launch vehicle'}
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}

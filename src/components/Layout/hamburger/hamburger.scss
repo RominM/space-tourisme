@@ -1,6 +1,7 @@
 @import './../../../style/sass/bases/colors.scss';
 
 .hamburger-menu {
+  position: sticky;
   margin: 2rem;
   display: flex;
   flex-flow: column wrap;
@@ -8,6 +9,7 @@
   width: 30px;
   height: 21px;
   cursor: pointer;
+  z-index: 52;
   .bar-top,
   .bar-middle,
   .bar-bottom {
@@ -17,16 +19,18 @@
     margin: 6px 0;
     transform-origin: left;
     transition: all 0.5s;
+    z-index: 16;
   }
   .toggle-top,
   .toggle-middle,
   .toggle-bottom {
-    height: 5px;
+    height: 4px;
     background: white;
     border-radius: 5px;
-    margin: 7px 0;
+    margin: 6px 0;
     transform-origin: left;
     transition: all 0.5s;
+    z-index: 16;
   }
   .toggle-top {
     transform: rotate(45deg);

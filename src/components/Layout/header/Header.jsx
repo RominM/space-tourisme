@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink, useParams } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from './../../../assets/shared/logo.svg';
 import Hamburger from '../hamburger/Hamburger';
 import './header.scss';
@@ -10,8 +10,7 @@ const Header = (props) => {
   const spaceData = props.data;
   const destination = spaceData.destinations;
 
-  let nameId = useParams();
-  console.log('nameId : ', nameId); //undefined
+  // let nameId = useParams();
 
   let nameArray = [];
   useEffect(() => {
@@ -19,9 +18,7 @@ const Header = (props) => {
       const names = name.name;
       nameArray.push(names);
     });
-  }, [destination]);
-
-  console.log('nameArray : ', nameArray);
+  }, [destination, nameArray]);
 
   const showNav = {
     display: showTopNavMenu ? 'block' : 'none',
