@@ -1,18 +1,20 @@
+@import './../../../style/sass/bases/colors.scss';
+
 .hamburger-menu {
   margin: 2rem;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  height: 35px;
-  width: 35px;
+  width: 30px;
+  height: 21px;
   cursor: pointer;
   .bar-top,
   .bar-middle,
   .bar-bottom {
-    height: 5px;
-    background: white;
+    height: 4px;
+    background: $MainPurple;
     border-radius: 5px;
-    margin: 7px 0;
+    margin: 6px 0;
     transform-origin: left;
     transition: all 0.5s;
   }
@@ -37,4 +39,3 @@
     transform: rotate(-45deg);
   }
 }
-

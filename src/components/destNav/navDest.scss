@@ -3,12 +3,14 @@
 .nav-planet {
   @include main-light-font;
   width: 100%;
+  margin: auto;
+
   ul {
     display: flex;
     justify-content: space-between;
     width: 67%;
     li {
-      font-size: 20px;
+      font-size: 1.2rem;
       letter-spacing: 2.7px;
       a {
         padding: 15px 0;
@@ -25,6 +27,28 @@
       }
       .active:hover {
         border-bottom: $MainWhite 4px solid;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-planet {
+    ul {
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-planet {
+    margin: auto;
+    ul {
+      width: 80%;
+      margin: 40px auto;
+      li {
+        margin: 0 10px;
+        font-size: small;
       }
     }
   }

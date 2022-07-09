@@ -1,0 +1,14 @@
+.slider {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  padding-left: 200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .slider {
+    padding-left: 0;
+    width: 90%;
+  }
+}

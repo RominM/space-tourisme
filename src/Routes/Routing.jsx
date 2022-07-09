@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useParams,
+} from 'react-router-dom';
 /* Pages & Components */
-import Header from '../components/Layout/header/Header';
-import Crew from '../pages/crew/Crew';
-import Destination from '../pages/destination/Destination';
-import Home from '../pages/home/Home';
-import Technology from '../pages/technology/Technology';
+import Header from 'components/Layout/header/Header';
+import Crew from 'pages/crew/Crew';
+import Destination from 'pages/destination/Destination';
+import Home from 'pages/home/Home';
+import Technology from 'pages/technology/Technology';
+/* DATA */
+import SPACE_DATA from 'services/data/data.json';
 
 const Routing = () => {
+  const spaceData = SPACE_DATA;
   const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
@@ -28,7 +36,7 @@ const Routing = () => {
 
   return (
     <Router>
-      <Header showTopNavMenu={responsive.showTopNavMenu} />
+      <Header showTopNavMenu={responsive.showTopNavMenu} data={spaceData} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/destination/:name" element={<Destination />} />

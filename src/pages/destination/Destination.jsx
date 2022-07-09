@@ -12,6 +12,7 @@ import './../main.scss';
 const Destination = () => {
   const destinations = SPACE_DATA.destinations;
   const paramDestinaton = useParams().name;
+  // console.log(paramDestinaton);
 
   const currentDest = destinations.find(
     (destination) => destination.name === paramDestinaton

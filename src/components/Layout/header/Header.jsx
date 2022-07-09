@@ -1,11 +1,27 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useParams } from 'react-router-dom';
 import logo from './../../../assets/shared/logo.svg';
 import Hamburger from '../hamburger/Hamburger';
 import './header.scss';
+import { useEffect } from 'react';
 
 const Header = (props) => {
   const showTopNavMenu = props.showTopNavMenu;
+  const spaceData = props.data;
+  const destination = spaceData.destinations;
+
+  let nameId = useParams();
+  console.log('nameId : ', nameId); //undefined
+
+  let nameArray = [];
+  useEffect(() => {
+    destination.forEach((name) => {
+      const names = name.name;
+      nameArray.push(names);
+    });
+  }, [destination]);
+
+  console.log('nameArray : ', nameArray);
 
   const showNav = {
     display: showTopNavMenu ? 'block' : 'none',
@@ -17,7 +33,7 @@ const Header = (props) => {
   return (
     <header className="header">
       <Link to="/">
-        <img src={logo} alt="logo space" width="48" height="48" />
+        <img src={logo} alt="logo space tourisme" width="48" height="48" />
       </Link>
       <Hamburger style={showMenuIcon} />
       <nav id="nav_container" style={showNav}>
@@ -33,7 +49,7 @@ const Header = (props) => {
           </li>
           <li>
             <NavLink
-              to={'/destination/Moon'}
+              to={!nameArray ? '/destination/:nameId' : '/destination/Moon'}
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
               <span className="header-nmb">01</span>&nbsp;

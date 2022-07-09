@@ -11,12 +11,32 @@
   -o-background-size: cover;
   background-size: cover;
   img {
-    width: 445px;
-    padding-left: 75px;
+    width: 50vw;
+    height: 50vw;
+    max-width: 445px;
+    max-height: 445px;
+    min-width: 175px;
+    min-height: 175px;
+    margin: auto;
   }
   &_aside {
-    height: 472px;
-    padding-left: 80px;
+    width: 50vw;
+    height: auto;
+    max-width: 472px;
+    max-height: 472px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .destination {
+    img {
+      width: 50vw;
+      height: 50vw;
+    }
+    &_aside {
+      width: 90%;
+      margin: auto;
+    }
   }
 }

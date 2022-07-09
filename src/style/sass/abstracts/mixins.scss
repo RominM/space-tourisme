@@ -16,7 +16,8 @@
 @mixin para {
   @include main-light-font;
   position: relative;
-  width: 450px;
+  max-width: 450px;
+  min-width: 280px;
   padding-bottom: 50px;
   color: $MainPurple;
   font-size: 19px;
@@ -31,3 +32,4 @@
   color: $MainWhite;
   margin: 25px 0;
 }
+

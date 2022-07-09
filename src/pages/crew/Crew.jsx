@@ -6,7 +6,7 @@ import CrewInfo from 'components/crewInfo/CrewInfo';
 import CrewNav from 'components/crewNav/CrewNav';
 import Picture from 'components/picture/Picture';
 import TitlePage from 'components/titlePage/TitlePage';
-import './../slider.scss';
+import './../../components/slider/slider.scss';
 import './crew.scss';
 import './../main.scss';
 

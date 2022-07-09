@@ -2,10 +2,11 @@
 
 .title-page {
   display: flex;
-  width: 390px;
+  // width: 60%;
   margin: 200px 200px 100px 200px;
-  font-size: 28px;
+  font-size: 1.7rem;
   letter-spacing: 5px;
+  align-items: center;
   &--nmb {
     @include main-bolder-font;
     color: $MainGrey;
@@ -15,5 +16,19 @@
     color: $MainWhite;
     @include main-light-font;
     width: auto;
+  }
+}
+
+@media screen and(max-width: 1000px) {
+  .title-page {
+    text-align: center;
+    margin: 125px auto 10%;
+    justify-content: center;
+  }
+}
+
+@media screen and(max-width: 780px) {
+  .title-page {
+    font-size: calc(7px + 1.7vw);
   }
 }

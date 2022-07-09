@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Picture = (props) => {
+  // console.log(props);
   const currentData = props.currentData;
   const picFormat = currentData.images;
 
