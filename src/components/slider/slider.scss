@@ -6,7 +6,6 @@
   margin: auto;
 }
 .slider-bis {
-  // display: flex;
   flex-direction: column-reverse;
 }
 
@@ -14,5 +13,6 @@
   .slider {
     padding-left: 0;
     width: 90%;
+    margin-bottom: 75px;
   }
 }
