@@ -3,22 +3,22 @@ import { Link, NavLink } from 'react-router-dom';
 import logo from './../../../assets/shared/logo.svg';
 import Hamburger from '../hamburger/Hamburger';
 import './header.scss';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 const Header = (props) => {
   const showTopNavMenu = props.showTopNavMenu;
-  const spaceData = props.data;
-  const destination = spaceData.destinations;
+  // const spaceData = props.data;
+  // const destination = spaceData.destinations;
 
   // let nameId = useParams();
 
-  let nameArray = [];
-  useEffect(() => {
-    destination.forEach((name) => {
-      const names = name.name;
-      nameArray.push(names);
-    });
-  }, [destination, nameArray]);
+  // let nameArray = [];
+  // useEffect(() => {
+  //   destination.forEach((name) => {
+  //     const names = name.name;
+  //     nameArray.push(names);
+  //   });
+  // }, [destination, nameArray]);
 
   const showNav = {
     display: showTopNavMenu ? 'block' : 'none',
@@ -46,7 +46,7 @@ const Header = (props) => {
           </li>
           <li>
             <NavLink
-              to={!nameArray ? '/destination/:nameId' : '/destination/Moon'}
+              to={'/destination/Moon'}
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
               <span className="header-nmb">01</span>&nbsp;
